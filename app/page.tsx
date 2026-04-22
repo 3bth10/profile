@@ -40,10 +40,10 @@ export default function Home() {
       <span className="tracking-[.25em] col-span-2">+966590089218</span> 
     </div>
     <div className="bg-gray-700 rounded-full   p-5 flex gap-4  ">
-      <span>My Githbu</span> 
+      <span>Githbu</span> 
       <span className="tracking-[.05em] col-span-2 text-cyan-400"><a className="" href={mylinks.git}>{mylinks.git}</a></span> 
     </div>
-    <div className="bg-gray-700 rounded-full   p-5 flex  gap-4">
+    <div className="bg-gray-700 rounded-full  p-5 flex  gap-4">
       <span  >linkdin</span> 
       <span className="tracking-[.25em] col-span-2"><a href={mylinks.edin}>linkedin</a></span> 
     </div>
@@ -76,19 +76,17 @@ export default function Home() {
       <h2 className="text-xl text-cyan-500 text-bold tracking-[.15em] font-bold">Projects</h2>
         <hr className=" text-cyan-500 m-5 w-full"/>
         <div className="lg:grid lg:grid-cols-4 gap-4" >
-            <ProjectCard title='Housing Management System' details='Django · PostgreSQL · REST API' />
+            <ProjectCard title='Housing Management System' details='A scalable hosting application powered by Django, PostgreSQL, and RESTful APIs.' />
          
           <ProjectCard title='Alqsor Cunts' 
-          details='we help the staff to cunt they money and manage all they parties automatcly' 
+          details='We help staff track their finances and manage all their events automatically.' 
           link='https://github.com/3bth10/manager_party'/>
 
           <ProjectCard title='Donlowder'
-           details='we help one our cline to get they own app
-            to skip ad and downlow vides form almost everwhere' link='https://github.com/3bth10/Youtube_downloader'/>
+           details='A pure Python application designed for efficient video downloading from multiple sources.' link='https://github.com/3bth10/Youtube_downloader'/>
 
           <ProjectCard title='Movies app'
-           details='use api and link between react-native app 
-           show the pupler movies and search ' link='https://github.com/3bth10/movies-app-With-react-native' />
+           details='We integrate APIs with a React Native app to showcase popular movies and provide a seamless search experience. ' link='https://github.com/3bth10/movies-app-With-react-native' />
         </div>
         <div className="mt-10 ">
           <Btn title='See more' href='https://github.com/3bth10?tab=repositories'/>
