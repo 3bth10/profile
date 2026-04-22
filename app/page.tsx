@@ -40,7 +40,7 @@ export default function Home() {
       <span className="tracking-[.25em] col-span-2">+966590089218</span> 
     </div>
     <div className="bg-gray-700 rounded-full   p-5 flex gap-4  ">
-      <span>Githbu</span> 
+      <span>Github</span> 
       <span className="tracking-[.05em] col-span-2 text-cyan-400"><a className="" href={mylinks.git}>{mylinks.git}</a></span> 
     </div>
     <div className="bg-gray-700 rounded-full  p-5 flex  gap-4">
