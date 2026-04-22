@@ -1,8 +1,10 @@
 import Btn from "./btn"
+import Img from '../public/1776877860054.jpg'
 
 const Hero = ()=>{
 
-    const cv = 'https://drive.usercontent.google.com/u/0/uc?id=1sIelwmPIrO-8qwnMJAfHvfuBjRt168sS&export=download'
+    const cv =  'https://drive.usercontent.google.com/u/0/uc?id=1sIelwmPIrO-8qwnMJAfHvfuBjRt168sS&export=download'
+    
     return(
         <div className="p-5 mt-5 w-full text-center " >
             <h4 className="text-start bg-gray-700 rounded-full w-fit px-4  ">
@@ -24,7 +26,9 @@ const Hero = ()=>{
                     </div>
                 </div>
                 <div className="">
-                    <div className="rounded-full bg-gray-700 mx-auto w-80 h-80 my-5"></div>
+                    <div className="rounded-full bg-gray-700 mx-auto w-80 h-80 my-5  ">
+                        <img src={Img.src} className="rounded-full border-5 border-cyan-500" alt="MA" />
+                    </div>
                     <div className="flex flex-cols justify-around">
                         <Btn title='years +3'/>
                         <Btn title='projects +13'/>
