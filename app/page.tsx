@@ -1,15 +1,22 @@
 import Image from "next/image";
 import Card from "@/components/card";
 import ProjectCard from "@/components/projectCard";
+import Hero from "@/components/Hero";
+import Btn from "@/components/btn";
 
 
 export default function Home() {
 
-  const mygit= 'https://github.com/3bth10'
+  const mylinks ={
+    'git' : 'https://github.com/3bth10',
+    'edin' : 'https://www.linkedin.com/in/%D9%85%D9%88%D8%B3%D9%89-%D9%85%D9%88%D8%AF%D9%8A-65bb22191/',
+    'insta' : '',
+    'phone' : ''
+  } 
 
   return (
    <div className="container px-5 h-full pb-5 flex flex-col overflow-hidden justify-center items-center  ">
-     
+     <Hero/>
 <div className="p-10 mt-30 grid grid-col-1 md:grid-cols-3 " id="home">
    
   <div className="col-span-2">
@@ -34,11 +41,11 @@ export default function Home() {
     </div>
     <div className="bg-gray-700 rounded-full   p-5 flex gap-4  ">
       <span>My Githbu</span> 
-      <span className="tracking-[.05em] col-span-2 text-cyan-400"><a className="" href={mygit}>{mygit}</a></span> 
+      <span className="tracking-[.05em] col-span-2 text-cyan-400"><a className="" href={mylinks.git}>{mylinks.git}</a></span> 
     </div>
     <div className="bg-gray-700 rounded-full   p-5 flex  gap-4">
       <span  >linkdin</span> 
-      <span className="tracking-[.25em] col-span-2"><a href="">linkedin</a></span> 
+      <span className="tracking-[.25em] col-span-2"><a href={mylinks.edin}>linkedin</a></span> 
     </div>
   </div>
 
@@ -83,6 +90,10 @@ export default function Home() {
            details='use api and link between react-native app 
            show the pupler movies and search ' link='https://github.com/3bth10/movies-app-With-react-native' />
         </div>
+        <div className="mt-10 ">
+          <Btn title='See more' href='https://github.com/3bth10?tab=repositories'/>
+        </div>
+        
     </div>
     
       

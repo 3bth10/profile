@@ -8,7 +8,6 @@ import test from "node:test"
         hover:scale-110 border-cyan-500 border-' >
            <h3 className="font-bold text-sm lg:text-lg p-5">{text}</h3>
            <p>{description}</p>
-            
     </div>
        
     )
