@@ -1,8 +1,12 @@
+
+"use client"
+
 import Image from "next/image";
 import Card from "@/components/card";
 import ProjectCard from "@/components/projectCard";
 import Hero from "@/components/Hero";
 import Btn from "@/components/btn";
+import Sendbox from "@/components/sendbox";
 
 
 export default function Home() {
@@ -93,7 +97,7 @@ export default function Home() {
         </div>
         
     </div>
-    
+    <Sendbox/>
       
    </div>
   
