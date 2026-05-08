@@ -48,7 +48,7 @@ export default function Home() {
       <span className="tracking-[.05em] col-span-2 text-cyan-400"><a className="" href={mylinks.git}>{mylinks.git}</a></span> 
     </div>
     <div className="bg-gray-700 rounded-full  p-5 flex  gap-4">
-      <span  >linkdin</span> 
+      <span  >Linkdin</span> 
       <span className="tracking-[.25em] col-span-2"><a href={mylinks.edin}>linkedin</a></span> 
     </div>
   </div>

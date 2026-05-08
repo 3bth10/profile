@@ -28,7 +28,7 @@ const Hero = ()=>{
                 <div className="">
 
                     <div className="rounded-full bg-gray-700 mx-auto w-80 h-80 my-5   ">
-                        <img src={Img.src} className="rounded-full border-5 border-cyan-500" alt="MA" />
+                        <img src={Img} className="rounded-full border-5 border-cyan-500" alt="profile" />
                     </div>
                     <hr className=" mb-3" />
                     <div className="grid grid-cols-2 gap-5 ">
