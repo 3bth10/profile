@@ -1,8 +1,8 @@
 import Btn from "./btn"
-import Img from '../public/1776877860054.jpg'
+
 
 const Hero = ()=>{
-
+    const Img = 'https://res.cloudinary.com/diemmjwiy/image/upload/v1778254079/1776877860054_medxoz.png'
     const cv =  'https://drive.usercontent.google.com/u/0/uc?id=1sIelwmPIrO-8qwnMJAfHvfuBjRt168sS&export=download'
     
     return(
