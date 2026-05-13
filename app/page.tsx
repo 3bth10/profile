@@ -11,6 +11,9 @@ import Sendbox from "@/components/sendbox";
 
 export default function Home() {
 
+  
+
+
   const mylinks ={
     'git' : 'https://github.com/3bth10',
     'edin' : 'https://www.linkedin.com/in/%D9%85%D9%88%D8%B3%D9%89-%D9%85%D9%88%D8%AF%D9%8A-65bb22191/',
@@ -49,7 +52,7 @@ export default function Home() {
     </div>
     <div className="bg-gray-700 rounded-full  p-5 flex  gap-4">
       <span  >Linkdin</span> 
-      <span className="tracking-[.25em] col-span-2"><a href={mylinks.edin}>linkedin</a></span> 
+      <span className="tracking-[.25em] col-span-2"><a href={mylinks.edin}>Linkedin</a></span> 
     </div>
   </div>
 

@@ -1,7 +1,33 @@
 import Btn from "./btn"
+import React, { useEffect } from "react"
 
 
 const Hero = ()=>{
+
+const [cont , setcount] =  React.useState('')
+const [ava , setava] =  React.useState(' ')
+
+ const mygit = `https://api.github.com/users/3bth10`
+useEffect(()=>{
+    const gt=  async () => {
+            try{
+            const res = await fetch(mygit)
+            const data = await res.json()
+            setava(data.avatar_url)
+
+            const repos = await fetch(mygit+'/repos')
+            const repoData = await repos.json()
+            setcount(repoData.length)
+            }catch(error : any){
+                return Response.json({ success: false, error: error.message  });
+            } 
+        }
+    gt()
+
+
+},[])
+
+    
     const Img = 'https://res.cloudinary.com/diemmjwiy/image/upload/v1778254079/1776877860054_medxoz.png'
     const cv =  'https://drive.usercontent.google.com/u/0/uc?id=1sIelwmPIrO-8qwnMJAfHvfuBjRt168sS&export=download'
     
@@ -27,13 +53,14 @@ const Hero = ()=>{
                 </div>
                 <div className="">
 
-                    <div className="rounded-full bg-gray-700 mx-auto w-80 h-80 my-5   ">
-                        <img src={Img} className="rounded-full border-5 border-cyan-500" alt="profile" />
+                    <div className="rounded-full bg-gray-700 mx-auto w-80 h-80 my-5 flex justify-center items-center ">
+                       {ava ? <img src={ava} className="rounded-full border-5 border-cyan-500"  /> : <h2 className="animate-pulse text-white">Loading...</h2> }
+                       
                     </div>
                     <hr className=" mb-3" />
                     <div className="grid grid-cols-2 gap-5 ">
                         <Btn title='years +3'/>
-                        <Btn title='projects +13'/>
+                        <Btn title={`projects + ${cont}`} />
                     </div>
 
                 </div>
